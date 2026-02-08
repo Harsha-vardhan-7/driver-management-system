@@ -1,121 +1,50 @@
-# Thomas Travel Driver Management System
+# Java Full Stack Projects
 
-## Overview
-Thomas Travel Driver Management System is a **console-based Core Java application** focused on managing driver information and performing operations using **Object-Oriented Programming and Java Collections**.
+This repository contains my Java Full Stack learning and practice projects, covering **Core Java, Object-Oriented Programming, Java Collections, and backend development fundamentals**.
 
-The purpose of this project is to practice **Core Java, OOP principles, and Java Collections-based logic** by modeling a real-world driver management scenario.
-
----
-
-## Problem Statement
-Thomas Travels wants to automate their driver management process.
-
-Each driver has the following attributes:
-1. Driver ID  
-2. Driver Name  
-3. Driver Category (Auto / Car / Lorry)  
-4. Total distance traveled  
-
-The application performs various operations on driver data such as searching, filtering, counting, and identifying maximum values.
+Each **major project** is maintained in its own folder with a dedicated README explaining the problem statement, design, and implementation details.
 
 ---
 
-## Functional Requirements
-The `Travel` service class provides the following functionalities:
+## Projects Included
 
-- **isCarDriver(Driver driver)**  
-  - Checks whether the given driver belongs to the `Car` category.
+### Core Java
+- **Thomas Travel Driver Management System**  
+  Console-based application focused on driver data management using OOP principles and Java Collections.
 
-- **retrieveByDriverId(ArrayList<Driver> drivers, int driverId)**  
-  - Searches for a driver by ID and returns details in the format:  
-    ```
-    Driver name is <driverName> belonging to the category <category> traveled <totalDistance> KM so far.
-    ```
-
-- **retrieveCountOfDrivers(ArrayList<Driver> drivers, String category)**  
-  - Returns the count of drivers belonging to a given category.
-
-- **retrieveDriversByCategory(ArrayList<Driver> drivers, String category)**  
-  - Returns a list of drivers belonging to the specified category.
-
-- **retrieveMaximumDistanceTravelledDriver(ArrayList<Driver> drivers)**  
-  - Returns the driver who has traveled the maximum distance.
+> Additional Core Java, Advanced Java, Spring Boot, and frontend projects
+> will be added progressively as part of my full stack learning journey.
 
 ---
 
-## Technologies & Concepts Used
-- **Language:** Java  
-- **Concepts:**
-  - Object-Oriented Programming (Encapsulation, Inheritance, Polymorphism)
-  - Classes and Objects
-  - Constructors and Methods
-  - Java Collections (`ArrayList`)
-  - Conditional statements and loops
-  - Searching and filtering logic
-  - Scanner for input handling
-
----
-
-## Project Structure
+## Repository Structure
 ```
-project-01-thomas-travels/
+java-fullstack-projects/
 │
-├── src/
-│   └── com/
-│       └── thomastravels/
-│           ├── model/
-│           │   └── Driver.java
-│           │
-│           ├── service/
-│           │   └── Travel.java
-│           │
-│           └── main/
-│               └── TestDriver.java
+├── project-01-thomas-travels/
+│   └── README.md
 │
 └── README.md
 ```
----
-
-## How the Application Works
-1. Driver objects are created with predefined data  
-2. Driver information is stored in an `ArrayList`  
-3. Service methods are invoked from the `TestDriver` class  
-4. Each method performs a specific operation and displays results in the console  
+Each project folder is self-contained and can be explored independently.
 
 ---
 
-## What I Learned
-- Designing entity and service classes properly
-- Applying OOP principles in real-world scenarios
-- Working with `ArrayList` and collection-based logic
-- Writing reusable and testable business methods
-- Separating data, logic, and execution flow
+## Purpose of This Repository
+- Strengthen Core Java fundamentals and logical thinking
+- Apply OOP concepts to real-world problem statements
+- Build a structured Java project portfolio
+- Track progression from Core Java to Full Stack development
 
 ---
 
-## Limitations
-- Console-based application
-- Data stored in memory (no database)
-- No UI layer
-
-These limitations are intentional to focus on **Core Java and logic building**.
-
----
-
-## Scope Note
-This project is intentionally limited to Core Java and Collections
-and was built as a learning exercise. No further enhancements are planned.
-
----
-
-## How to Run
-1. Clone the repository
-2. Open the project in Eclipse or IntelliJ IDEA
-3. Run the `TestDriver` class
-4. Observe the output in the console
+## How to Use This Repository
+1. Browse the project folders
+2. Read the project-level README for context
+3. Review the source code for implementation details
 
 ---
 
 ## Author
 Harsha Vardhan Chundru  
-Core Java | OOP | Java Collections
+Java | Core Java | OOP | Java Collections | Full Stack (Learning)
