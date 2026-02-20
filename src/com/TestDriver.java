@@ -23,13 +23,13 @@ public class TestDriver {
 		}
 		
 		
-	System.out.println(tr.retriveByDriverId(driver, 2));
+	System.out.println(tr.retrieveByDriverId(driver, 2));
 		
-	System.out.println(	tr.retriveCountOfDriver(driver, "Car"));
+	System.out.println(	tr.retrieveCountOfDriver(driver, "Car"));
 		
-	System.out.println(tr.retriveDriver(driver, "Auto"));
+	System.out.println(tr.retrieveDriver(driver, "Auto"));
 		
-	System.out.println(tr.retriveMaximumDistanceTravelledDriver(driver));
+	System.out.println(tr.retrieveMaximumDistanceTravelledDriver(driver));
 	}
 
 }

@@ -14,7 +14,7 @@ public class Travel {
 	}
 	
 	//Method 2 =====================
-	public String retriveByDriverId (ArrayList<Driver> driver, int driverID) {
+	public String retrieveByDriverId (ArrayList<Driver> driver, int driverID) {
 		for (int i=0; i<driver.size(); i++) {
 			if(driver.get(i) != null && driver.get(i).getDriverId()==driverID) {
 				return "Driver name is " + driver.get(i).getDriverName()
@@ -28,7 +28,7 @@ public class Travel {
 	
 	
 	//Method 3 =====================
-	public int retriveCountOfDriver (ArrayList<Driver> driver,String driverCategory) {
+	public int retrieveCountOfDriver (ArrayList<Driver> driver,String driverCategory) {
 		int count=0;
 		
 		for (int i=0; i<driver.size(); i++) {
@@ -42,7 +42,7 @@ public class Travel {
 	
 	
 	//Method 4 =====================
-	public ArrayList<Driver> retriveDriver (ArrayList<Driver> driver,String driverCategory) {
+	public ArrayList<Driver> retrieveDriver (ArrayList<Driver> driver,String driverCategory) {
 		ArrayList<Driver> result = new ArrayList<>();
 		
 		for(int i=0; i<driver.size(); i++) {
@@ -56,7 +56,7 @@ public class Travel {
 
 	
 	//Method 5 =====================
-	public Driver retriveMaximumDistanceTravelledDriver (ArrayList<Driver> driver) {
+	public Driver retrieveMaximumDistanceTravelledDriver (ArrayList<Driver> driver) {
 		if (driver ==null || driver.size()==0) {
 			return null;
 		}
