@@ -4,8 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Travel service class responsible for performing business operations on Driver
- * objects.
+ * Travel service class responsible for performing business operations on Driver objects.
  */
 public class Travel {
 
@@ -22,8 +21,8 @@ public class Travel {
 
 	// Method 2 =====================
 	/**
-	 * Retrieves driver details based on driver ID. Returns formatted string if
-	 * found, otherwise returns "Driver not found".
+	 * Retrieves driver details based on driver ID. 
+	 * Returns formatted string if found, otherwise returns "Driver not found".
 	 */
 	public String retrieveByDriverId(List<Driver> driver, int driverID) {
 		for (int i = 0; i < driver.size(); i++) {
@@ -70,8 +69,8 @@ public class Travel {
 
 	// Method 5 =====================
 	/**
-	 * Finds and returns the driver who has traveled the maximum distance. Returns
-	 * null if the list is empty.
+	 * Finds and returns the driver who has traveled the maximum distance. 
+	 * Returns null if the list is empty.
 	 */
 	public Driver retrieveMaximumDistanceTravelledDriver(List<Driver> driver) {
 		if (driver == null || driver.size() == 0) {
