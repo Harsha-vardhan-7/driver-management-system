@@ -11,7 +11,7 @@ public class TestDriver {
 
 	public static void main(String[] args) {
 
-		Travel tr = new Travel();
+		Travel travel = new Travel();
 
 		List<Driver> driver = new ArrayList<>();
 		driver.add(new Driver(1, "Harsha", "car", 20000.00));
@@ -23,16 +23,16 @@ public class TestDriver {
 		driver.add(new Driver(7, "Karthik", "Lorry", 1000000.00));
 
 		for (int i = 0; i < driver.size(); i++) {
-			System.out.println(tr.isCarDriver(driver.get(i)));
+			System.out.println(travel.isCarDriver(driver.get(i)));
 		}
 
-		System.out.println(tr.retrieveByDriverId(driver, 2));
+		System.out.println(travel.retrieveByDriverId(driver, 2));
 
-		System.out.println(tr.retrieveCountOfDriver(driver, "Car"));
+		System.out.println(travel.retrieveCountOfDriver(driver, "Car"));
 
-		System.out.println(tr.retrieveDriver(driver, "Auto"));
+		System.out.println(travel.retrieveDriver(driver, "Auto"));
 
-		System.out.println(tr.retrieveMaximumDistanceTravelledDriver(driver));
+		System.out.println(travel.retrieveMaximumDistanceTravelledDriver(driver));
 	}
 
 }
