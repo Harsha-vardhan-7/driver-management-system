@@ -18,7 +18,7 @@ public class Driver {
 	}
 
 	// Parameterized constructor to initialize driver details
-	Driver(int driverId, String driverName, String category, double totalDistance) {
+	public Driver(int driverId, String driverName, String category, double totalDistance) {
 		this.driverId = driverId;
 		this.driverName = driverName;
 		this.category = category;
@@ -46,8 +46,7 @@ public class Driver {
 	}
 
 	/**
-	 * Sets driver category after validating allowed values. Accepted values: Car,
-	 * Auto, Lorry (case-insensitive).
+	 * Sets driver category after validating allowed values. Accepted values: Car, Auto, Lorry (case-insensitive).
 	 */
 	public void setCategory(String category) {
 		if (category == null) {
