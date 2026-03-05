@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
  */
 public class Travel {
 
-	// Method 1: Checks whether a given driver belongs to "Car" category 
+	// Method 1: 
 	/**
 	 * Checks whether the given driver belongs to the "Car" category.
 	 *
@@ -49,7 +49,7 @@ public class Travel {
 				.orElse("Driver not found");
 	}
 
-	// Method 3: Counts number of drivers belonging to a specific category 
+	// Method 3: 
 	/**
 	 * Counts the number of drivers belonging to a specific category.
 	 *
@@ -69,7 +69,7 @@ public class Travel {
 				.filter(dr -> dr.getCategory().equalsIgnoreCase(driverCategory)).count();
 	}
 
-	// Method 4: Retrieves list of drivers belonging to a given category 
+	// Method 4: 
 	/**
 	 * Retrieves all drivers belonging to a specific category.
 	 *
