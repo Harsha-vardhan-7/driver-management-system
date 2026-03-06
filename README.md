@@ -1,105 +1,154 @@
-# Driver Management System
+# Driver Management System (Java 8 Streams)
 
 ## Overview
+The Driver Management System is a simple Java application that demonstrates the use of the **Java 8 Stream API** to perform operations on driver data.
 
-Driver Management System is a console-based Java application that manages driver records and performs business operations using Core Java and the Collections Framework.
+The project focuses on filtering, searching, counting, and finding drivers based on different conditions using **Streams, Lambda Expressions, Comparator, and Collectors**.
 
-The project demonstrates Object-Oriented Programming principles and collection-based data handling by modeling a real-world driver management scenario.
-
----
-
-## Problem Statement
-
-Thomas Travels aims to automate its driver management process.
-
-Each driver contains:
-
-- Driver ID
-- Driver Name
-- Driver Category (Auto / Car / Lorry)
-- Total Distance Traveled (in KM)
-
-The system performs operations such as searching, filtering, counting, and identifying maximum values using collection-based logic.
+This project was built to strengthen understanding of **Java 8 functional programming concepts while working with collections**.
 
 ---
 
-## Key Features
+## Features
 
-- Check whether a driver belongs to the Car category
-- Retrieve driver details by ID
-- Count drivers belonging to a specific category
-- Retrieve drivers filtered by category
-- Identify the driver who has traveled the maximum distance
-- Perform collection-based search operations with O(n) time complexity
+The application performs the following operations on a list of drivers:
+
+- Check whether a driver belongs to the **Car category**
+- Retrieve driver details using **Driver ID**
+- Count drivers belonging to a specific **category**
+- Retrieve all drivers belonging to a specific **category**
+- Find the driver who has travelled the **maximum distance**
 
 ---
 
-## Technologies & Concepts Used
+## Technologies Used
 
-- Java (Core Java)
-- Object-Oriented Programming (Encapsulation)
-- Java Collections Framework (ArrayList)
-- Conditional statements and loops
-- Method-based business logic design
-- Basic time complexity awareness
+- Java 8
+- Stream API
+- Lambda Expressions
+- Comparator
+- Collections Framework (ArrayList)
+- Object-Oriented Programming (OOP)
 
 ---
 
 ## Project Structure
-```
-driver-management-system/
-│
-├── src/
-│   └── com/
-│       ├── Driver.java
-│       ├── Travel.java
-│       └── TestDriver.java
-│
-├── README.md
-└── .gitignore
-```
----
 
-## How the Application Works
+DriverManagementSystem
 
-1. Driver objects are created with predefined data.
-2. Driver records are stored in an `ArrayList`.
-3. Business logic is implemented inside the `Travel` class.
-4. The `TestDriver` class invokes service methods and prints results in the console.
+src  
+└── com  
+  ├── Driver.java  
+  ├── Travel.java  
+  └── TestDriver.java  
+
+**Driver.java**  
+Represents the Driver entity containing driver details.
+
+**Travel.java**  
+Contains the business logic implemented using Java 8 Streams.
+
+**TestDriver.java**  
+Used to test and demonstrate all the functionalities of the system.
 
 ---
 
-## Core Service Methods
+## Driver Entity
 
-- `isCarDriver(Driver driver)`
-- `retrieveByDriverId(ArrayList<Driver>, int driverId)`
-- `retrieveCountOfDriver(ArrayList<Driver>, String category)`
-- `retrieveDriver(ArrayList<Driver>, String category)`
-- `retrieveMaximumDistanceTravelledDriver(ArrayList<Driver>)`
+Each driver contains the following attributes:
+
+- **driverId** – Unique identifier for the driver  
+- **driverName** – Name of the driver  
+- **category** – Vehicle category (Car, Auto, Lorry)  
+- **totalDistance** – Total distance travelled by the driver  
 
 ---
 
-## Key Learnings
+## Methods Implemented
 
-- Designing clean model and service classes
-- Applying OOP principles to simulate real-world systems
-- Implementing collection-based retrieval and filtering logic
-- Structuring modular and maintainable Java applications
-- Managing project structure using Git
+### isCarDriver()
+Checks whether a driver belongs to the **Car category**.
+
+### retrieveByDriverId()
+Finds and returns driver details based on the given **Driver ID**.
+
+### retrieveCountOfDriver()
+Counts the number of drivers belonging to a specific **category**.
+
+### retrieveDriver()
+Retrieves all drivers belonging to a given **category**.
+
+### retrieveMaximumDistanceTravelledDriver()
+Returns the driver who has travelled the **maximum distance**.
+
+---
+
+## Example Output
+
+true  
+false  
+true  
+
+Driver name is Harsha belonging to category car traveled 20000.0 KM so far.
+
+Count of Auto drivers: 3
+
+Drivers belonging to Auto category:
+
+Driver id is: 3, Driver name is: Dora, category: Auto, traveled: 100000 KM so far  
+Driver id is: 5, Driver name is: Kamalhasan, category: Auto, traveled: 20000 KM so far  
+Driver id is: 6, Driver name is: Rajinikanth, category: Auto, traveled: 10000 KM so far  
+
+Driver with maximum distance travelled:
+
+Driver id is: 7, Driver name is: Karthik, category: Lorry, traveled: 1000000 KM so far
+
+---
+
+## Concepts Demonstrated
+
+- Java 8 Stream API
+- Lambda Expressions
+- Comparator with Streams
+- Collectors
+- Filtering and transforming data using streams
+- Object-Oriented Programming
+- Working with Java Collections
+
+---
+
+## Requirements
+
+- Java 8 or higher
+- Any Java IDE (IntelliJ IDEA, Eclipse, VS Code)
 
 ---
 
 ## How to Run
 
 1. Clone the repository
-2. Open the project in Eclipse or IntelliJ IDEA
-3. Ensure JDK 17 (or compatible version) is configured
-4. Run the `TestDriver` class
-5. Observe the output in the console
+
+  git clone https://github.com/your-username/driver-management-java8.git
+
+2. Open the project in your preferred Java IDE.
+
+3. Navigate to the **TestDriver** class.
+
+4. Run the **main()** method to execute the program.
+
+---
+
+## Learning Outcomes
+
+This project demonstrates:
+
+- Practical usage of **Java 8 Stream API**
+- Writing **clean and functional-style Java code**
+- Applying **streams to perform real-world data processing**
+- Combining **OOP concepts with modern Java features**
 
 ---
 
 ## Author
 
-Harsha Vardhan  
-Java Developer | Backend-Focused | Core Java | Collections | SQL (Learning)
+Harsha Vardhan
