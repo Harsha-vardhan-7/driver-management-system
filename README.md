@@ -33,15 +33,14 @@ The application performs the following operations on a list of drivers:
 ---
 
 ## Project Structure
-
+```
 DriverManagementSystem
-
 src  
 └── com  
   ├── Driver.java  
   ├── Travel.java  
   └── TestDriver.java  
-
+```
 **Driver.java**  
 Represents the Driver entity containing driver details.
 
@@ -127,9 +126,9 @@ Driver id is: 7, Driver name is: Karthik, category: Lorry, traveled: 1000000 KM 
 ## How to Run
 
 1. Clone the repository
-
+```
   git clone https://github.com/your-username/driver-management-java8.git
-
+```
 2. Open the project in your preferred Java IDE.
 
 3. Navigate to the **TestDriver** class.
@@ -150,5 +149,4 @@ This project demonstrates:
 ---
 
 ## Author
-
-Harsha Vardhan
+Harsha Vardhan Chundru
